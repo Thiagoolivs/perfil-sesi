@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Perfil SESI</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background-color: #fcf9ef;
+      color: #2c2c2c;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+    }
+
+    .logo {
+      height: 30px;
+    }
+
+    .icons {
+      display: flex;
+      gap: 1rem;
+      font-size: 1.5rem;
+      color: #f59ca9;
+    }
+
+    main {
+      padding: 1rem;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 30px;
+      padding: 2rem;
+      text-align: center;
+      max-width: 500px;
+      margin: auto;
+      box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.05);
+    }
+
+    .profile-pic {
+      position: relative;
+      margin-bottom: 1rem;
+    }
+
+    .profile-pic img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid white;
+      box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .edit-icon {
+      position: absolute;
+      right: 8px;
+      top: 8px;
+      background: white;
+      border-radius: 50%;
+      padding: 4px;
+      font-size: 0.7rem;
+      box-shadow: 0px 2px 5px rgba(0,0,0,0.15);
+    }
+
+    .username {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+
+    .buttons button {
+      border: none;
+      border-radius: 10px;
+      padding: 0.5rem 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      font-size: 0.85rem;
+    }
+
+    .info-btn {
+      background-color: #ffe5e7;
+      color: #cf4a4f;
+    }
+
+    .qr-btn {
+      background-color: #e94a50;
+      color: white;
+    }
+
+    .section-title {
+      font-weight: 700;
+      font-size: 1.2rem;
+      margin: 2rem 0 1rem;
+      text-align: center;
+    }
+
+    .badge {
+      background-color: #ef4d56;
+      color: white;
+      border-radius: 50%;
+      padding: 0.3rem 0.6rem;
+      font-size: 0.8rem;
+      margin-left: 0.5rem;
+    }
+
+    .activity-card {
+      background: white;
+      border-radius: 20px;
+      padding: 1rem;
+      margin: auto;
+      max-width: 500px;
+      text-align: center;
+      box-shadow: 0px 2px 12px rgba(0,0,0,0.05);
+    }
+
+    .activity-card img {
+      height: 40px;
+      margin: 1rem 0;
+    }
+
+    .details {
+      display: flex;
+      justify-content: space-around;
+      font-size: 0.85rem;
+      margin-top: 1rem;
+    }
+
+    .details div {
+      text-align: center;
+    }
+
+    .details .title {
+      font-weight: bold;
+    }
+
+    .details .blue {
+      color: #3cc3bd;
+    }
+
+    .details .red {
+      color: #e44e56;
+    }
+
+    .footer-link {
+      margin-top: 1rem;
+      font-size: 0.9rem;
+      color: #e44e56;
+      font-weight: 600;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 0;
+      font-size: 0.8rem;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://www.sesisp.org.br/images/logo-sesi.svg" alt="Logo SESI" class="logo">
+    <div class="icons">
+      <span>≡</span>
+      <span>⎋</span>
+    </div>
+  </header>
+
+  <main>
+    <div class="card">
+      <div class="profile-pic">
+        <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" alt="Foto Perfil">
+        <div class="edit-icon">✎</div>
+      </div>
+      <div class="username">Enzo Bernado</div>
+      <div class="buttons">
+        <button class="info-btn">Minhas Informações</button>
+        <button class="info-btn">Editar Perfil</button>
+        <button class="qr-btn">QR Code</button>
+      </div>
+    </div>
+
+    <div class="section-title">Atividade Física e Lazer <span class="badge">1</span></div>
+
+    <div class="activity-card">
+      <div class="activity-title">
+        <strong>Plano Básico - Individual -</strong><br/>PLANO BÁSICO INDIVIDUAL
+      </div>
+      <img src="https://www.sesisp.org.br/images/logo-sesi.svg" alt="Logo SESI">
+      <div class="details">
+        <div>
+          <div class="blue title">Data de Inscrição</div>
+          <div>27/08/2021</div>
+        </div>
+        <div>
+          <div class="red title">Data de Vencimento</div>
+          <div>31/12/2025</div>
+        </div>
+      </div>
+      <div class="footer-link">📄 Detalhes</div>
+    </div>
+  </main>
+
+  <footer>
+    2021© SESI
+  </footer>
+</body>
+</html>
